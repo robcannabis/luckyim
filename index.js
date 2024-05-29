@@ -34,39 +34,39 @@ client.on('ready', async () => {
   setInterval(() => {
     const moment = require('moment');
     const created = moment().format('YYYY-MM-DD HH:mm:ss ');
-    const change = ['https://cdn.discordapp.com/attachments/1065988274918797392/1236255399699677185/vasdvasd.jpg?ex=6637580f&is=6636068f&hm=0525f84d0819195af5cd7847c6c4259c59ae1fee9f822d970719d70e0d1c4481&']; //รูปใหญ่
+    //const change = ['https://cdn.discordapp.com/attachments/1083058673640808448/1218264568183263262/213111.gif?ex=663b1b8b&is=6639ca0b&hm=fc7850e67a85b19a0281c582e686cb25dfd90039f49f700567c7f8bd2be1c3d3&']; //รูปใหญ่
      //const poop = ['https://cdn.discordapp.com/attachments/1114551993499918438/1122462459710681170/1095697715238797403.gif','https://cdn.discordapp.com/attachments/1114551993499918438/1122462460817977395/1095697740543049819.gif','https://cdn.discordapp.com/attachments/1114551993499918438/1122462460125921341/1095697719189844048.gif','https://cdn.discordapp.com/attachments/1114551993499918438/1116029023957561425/1110570045454696509.gif']; // รูปเล็ก
     const change2 = [' ']; // ชื่อสลับ
-    //const yyyt = ['Music 2']; // ชื่อ button1
-    //const ddds = ['https://www.youtube.com/watch?v=RXGmYC1U7ms']; // ลิ้ง button1
+    const yyyt = ['꒰ Song ꒱']; // ชื่อ button1
+    const ddds = ['https://www.youtube.com/watch?v=CpGzulhubP8']; // ลิ้ง button1
 
-   //const iooi = ['Facebook ♪']; // ชื่อ button 2
-   //const iiio = ['https://www.facebook.com/thunwalaiphare?locale=th_TH']; // ลิ้ง button 2
-   //const tyyy = yyyt[Math.floor(Math.random()*yyyt.length)]; // ชื่อ button 2
-   //const sddd = ddds[Math.floor(Math.random()*ddds.length)]; // ลิ้ง button 2
-   //const oooi = 
-//iiio[Math.floor(Math.random()*iiio.length)]; // button 1 ใส่ลิ้ง
-    //const ioii =
-//iooi[Math.floor(Math.random()*iooi.length)]; // button 1 ใส่ชื่อ
+   const iooi = ['꒰ Facebook ꒱']; // ชื่อ button 2
+   const iiio = ['https://www.facebook.com/profile.php?id=100040286390353&mibextid=LQQJ4d']; // ลิ้ง button 2
+   const tyyy = yyyt[Math.floor(Math.random()*yyyt.length)]; // ชื่อ button 2
+   const sddd = ddds[Math.floor(Math.random()*ddds.length)]; // ลิ้ง button 2
+   const oooi = 
+iiio[Math.floor(Math.random()*iiio.length)]; // button 1 ใส่ลิ้ง
+    const ioii =
+iooi[Math.floor(Math.random()*iooi.length)]; // button 1 ใส่ชื่อ
     //const popp =
 //poop[Math.floor(Math.random()*poop.length)]; // รูปเล็ก
-    const ssss = 
-change[Math.floor(Math.random()*change.length)]; // รูปใหญ่
+    //const ssss = 
+//change[Math.floor(Math.random()*change.length)]; // รูปใหญ่
     const dwada = change2[Math.floor(Math.random()*change2.length)]; // ชื่อสลับคำ
     const r = new Discord.RichPresence()
       .setApplicationId('1112701450150232085')
       .setType('STREAMING')
-      .setURL('https://www.youtube.com/watch?v=yFg7_bjl2-k')
-      .setState(`🍃 : ${global.wind} Km/h | 🌡 : ${global.temp} C°`)
+      .setURL('https://www.youtube.com/watch?v=R-pyqIFbjIY')
+      .setState(`（  ${getTime()} ） • （ ${moment().format('DD/MM/YYYY')} ）`)
       .setName(`RobShop`)
-      .setDetails(`ความสุขก็เหมือนกับผีเสื้อ`)
+      .setDetails(`ความสุขก็เหมือนกับ ผีเสื้อ`)
       //.setAssetsSmallImage(`${popp}`) 
-.setAssetsLargeImage(`${ssss}`)
-.setAssetsLargeText(`（  ${getTime()} ） • （ ${moment().format('DD/MM/YYYY')} ）`)
-.setAssetsSmallText(`ping : ${Math.round(client.ws.ping)}`)
-//.addButton(`${ioii}`,`${oooi}`)  
+//.setAssetsLargeImage(`${ssss}`)
+//.setAssetsLargeText(`（  ${getTime()} ） • （ ${moment().format('DD/MM/YYYY')} ）`)
+//.setAssetsSmallText(`ping : ${Math.round(client.ws.ping)}`)
+.addButton(`${ioii}`,`${oooi}`)  
 
-      //.addButton(`${tyyy}`,`${sddd}`)
+      .addButton(`${tyyy}`,`${sddd}`)
 //.setStartTimestamp("1672545600" || Date.now())
 //.setEndTimestamp("1704077999" || Date.now())
     client.user.setActivity(r);
@@ -103,4 +103,4 @@ let options = {
   }
   function getTime() {
     return (new Date()).toLocaleString([], options).split(" ")[1].replaceAll(",", "");
-          }
+          }  

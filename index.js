@@ -40,8 +40,8 @@ client.on('ready', async () => {
     const yyyt = ['꒰ Song ꒱']; // ชื่อ button1
     const ddds = ['https://www.youtube.com/watch?v=CpGzulhubP8']; // ลิ้ง button1
 
-   const iooi = ['꒰ Facebook ꒱']; // ชื่อ button 2
-   const iiio = ['https://www.facebook.com/profile.php?id=100040286390353&mibextid=LQQJ4d']; // ลิ้ง button 2
+   const iooi = ['꒰ Discord ꒱']; // ชื่อ button 2
+   const iiio = ['https://discord.gg/2GsgxyBFMw']; // ลิ้ง button 2
    const tyyy = yyyt[Math.floor(Math.random()*yyyt.length)]; // ชื่อ button 2
    const sddd = ddds[Math.floor(Math.random()*ddds.length)]; // ลิ้ง button 2
    const oooi = 
